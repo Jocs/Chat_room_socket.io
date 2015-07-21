@@ -1,0 +1,90 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background: #eee;
+}
+#chat{
+	position: relative;
+	display:none;
+	width:800px;
+	height: 550px;
+	margin:50px 50px;
+	background: #fff;
+	border-radius:10px;
+}
+#message{
+	padding:10px;
+	height:430px;
+	list-style: none;
+	overflow:auto;
+}
+#message li{
+	margin-top:10px;
+}
+#input{
+	width:600px;
+	height:100px;
+	resize:none;
+	border:2px solid #eee;
+}
+#submit{
+	position: absolute;
+	width:160px;
+	height: 60px;
+	bottom:20px;
+	right: 20px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.announcement{
+	color:green;
+}
+#message .self{
+	color: red;
+}
+#message .others{
+	color:orange;
+}
+#song{
+	display: none;
+	position: absolute;
+	top:50px;
+	right: 30px;
+	width:360px;
+	height: 550px;
+
+}
+#dj h3{
+	width:200px;
+	margin:20px auto;
+}
+#dj input,#dj button{
+	display: inline-block;
+}
+#dj button{
+	padding:2px;
+}
+#results a{
+	display: none;
+}
+form.isDJ #results a{
+	display: inline;
+}
+#results{
+	list-style: none;
+	overflow: auto;
+	height: 380px;
+}
+#results li{
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+

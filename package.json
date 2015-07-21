@@ -1,0 +1,10 @@
+{
+	"name":"Socket",
+	"version":"0.0.1",
+	"dependencies":{
+		"express":"",
+		"socket.io":"",
+		"body-parser":"",
+		"superagent":"1.2.0"
+	}
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Socket.io chat</title>
+	<link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css"/>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/chat.js"></script>
+	<link rel="stylesheet" href="/chat.css"/>
+</head>
+<body>
+	<div id="chat">
+		<ul id="message"></ul>
+		<form id="form">
+			<textarea id="input"></textarea>
+			<button id="submit">Send</button>
+		</form>
+	</div>	
+	<div id="song">
+		<form id="dj">
+			<h3>Search Songs</h3>
+			<label for="s">请输入歌名或歌手名: </label>
+			<input type="text" id="s"/>
+			<button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+			<ul id="results"></ul>
+		</form>
+		<div id="playing"></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	function a(){
+		var a = {
+			a: '1',
+			b: '2'
+		};
+		function b(){
+			a.c = '3';
+		}
+		b();
+		alert(a.c);
+	}
+	a();
+	</script>
+</body>
+</html>
