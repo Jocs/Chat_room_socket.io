@@ -38,7 +38,7 @@ io.sockets.on('connection', function(socket){
 		fn( Date.now() );
 	});
 	socket.on('search', function(q, fn){
-		console.log('listen search: ' + q);
+		//console.log('listen search: ' + q);
 
 		request.get('http://lib9.service.kugou.com/websearch/index.php?page=1&keyword='+ q +'&cmd=100&pagesize=25' )
 				.end(function(err, res){
@@ -52,11 +52,11 @@ io.sockets.on('connection', function(socket){
 						request.get('http://m.kugou.com/app/i/getSongInfo.php?hash=' + song.hash + '&cmd=playInfo')
 						.end(function(err, res){
 							song.url = JSON.parse(res.text).url;
-							console.log(song.url);
+							//console.log(song.url);
 							count ++;	
 							if(200 == res.status && songs.length == count - 1){
 								fn(songs);
-								console.log(songs);
+								//console.log(songs);
 							};
 						});	
 					
